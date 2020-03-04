@@ -1,0 +1,44 @@
+<!DOCTYPE html>  
+<html>  
+   <head>  
+      
+      <style type="text/css">  
+         fieldset {  
+            border: #00cc00 2px solid;  
+            padding: 10px;  
+            color: green; 
+         }
+      </style>
+      </head>
+   <body>  
+<form>  
+   <fieldset>  
+      <legend>Csharpcorner</legend>  
+      <aside>  
+         <img src="" alt="Mountain View"><br>  
+         First name:<br>   
+         <input type="text" name="fname" Value=""><br>  
+         Last name :<br>  
+         <input type="text" name="lname" Value=""><br>  
+         Address1 :<br>  
+         <input type="text" name="Add1" Value=""><br>  
+         Address2 :<br>  
+         <input type="text" name="Add2" Value=""><br>  
+         <br>  
+         <input type="button" onclick="WriteToFile()" value="Submit" /><br>  
+      </aside>  
+   </fieldset>  
+</form>  
+<script type ="text/javascript">
+   function WriteToFile(passForm) {
+  
+     fso = CreateObject("Scripting.FileSystemObject");  
+      s = fso.CreatertfFile("test.rtf", True);
+      s.writeline("document.passForm.input1.value");
+      s.writeline("document.passForm.input2.value");
+      s.writeline("document.passForm.input3.value");
+      s.Close();
+   }
+    </script>
+</body>  
+</html>

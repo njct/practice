@@ -1,0 +1,107 @@
+body{
+    width: 100%;
+}
+
+header{
+    background-color: #66669A;
+    color: white;
+}
+.head_txt{
+    font-size: 20px;
+    font-style: normal;
+    display: inline-block;
+    margin: 0px;
+    
+    border-right: 1px solid white;
+    padding: 5px;
+    padding-right: 40px;
+    padding-left: 40px;
+
+    height: 100%;
+}
+.div_top1{
+    width: 100%;
+    height: 150px;
+    background-color: #EBECF1;
+    
+}
+.nav1{
+    font-size: 20px;
+    font-style: normal;
+    margin-left: 285px;
+    margin-top:20px;
+    display: inline-block;
+    border: 1px solid white;
+    background-color: white;
+    padding-right: 40px;
+    padding-left: 40px;
+
+    height: 32px;
+}
+.nav2{
+    font-size: 20px;
+    font-style: normal;
+    
+    margin-top:20px;
+    display: inline-block;
+    border: 1px solid white;
+    
+    padding-right: 40px;
+    padding-left: 40px;
+
+    height: 32px;
+}
+aside{
+    margin-top: -140px;
+    width: 17%;
+    height: 120px;
+    margin-left:20px ;
+    background-color: rgba(216, 191, 216, 0);
+    display: inline-block;
+}
+.div_bside{
+    display: inline-block;
+    position: absolute;
+    margin-left: 200px;
+
+    width: 70%;
+    /* height: 120px; */
+    margin-left:20px ;
+    
+}
+.div_share{
+    padding: 10px;
+    height:110px;
+    background-color: gray;
+}
+.txt_small_light{
+    font-size: 15px;
+    color: rgb(52, 50, 50);
+    
+}
+.txt_regular{
+    margin-top: -15px;
+}
+.ctr{
+    text-align: center;
+}
+.img_main{
+    margin: 20px;
+    height: 208px;
+    width: 170px;
+  
+}
+.img_main:hover{
+    height: 210px;
+    width: 172px;
+    cursor: pointer;
+}
+.img_main:active{
+    height: 208px;
+    width: 170px;
+    cursor: pointer;
+}
+.img_aside{
+    height: 208px;
+    cursor: pointer;
+}

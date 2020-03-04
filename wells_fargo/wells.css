@@ -1,0 +1,154 @@
+.div_IMGAREA{
+    background-image:url("FICO-phone-borrowing-and-credit-970x485.jpg") ;
+    height: 500px;
+    width: 900px;
+    display: inline-block;
+    margin-top: 200px;
+}
+
+.div_main{
+   /* height="485px" width="970px" > */
+   margin-right: 50px;
+
+   position: relative;
+    height: 500px;
+    width: 600px;
+display: inline-block;
+}
+.div_side{
+    display: inline-block;
+    position: absolute;
+    margin-top: 70px; 
+    
+    height: 360px;
+    width: 220px;
+  
+    overflow: scroll;
+    
+}
+.div_box_btn{
+    
+    height: 110px;
+    width: 200px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    /* padding: 50%; */
+    
+    background-color:white;
+    
+    font-size: 17px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.div_box_btn:hover{
+    cursor: pointer;
+}
+.div_box_btn:active{
+    
+    width: 201px;
+}
+.div_btn{
+    margin-top: 60px;
+    margin-left: 20px;
+    width: 300px;
+
+   padding:5px;
+   text-align: center;
+border-radius: 5px;
+
+background-color: rgb(182, 14, 14);
+color: white;
+font-size: 15px;    
+
+font-family: Verdana;
+
+}
+.div_scr{
+    border-color: rgb(88, 88, 88);
+    background-color: white;
+    
+}
+.padle {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 730px;
+}
+.padle2 {
+    position: absolute;
+    margin-top: 445px;
+    margin-left:76px;
+}
+.icos{
+    
+position:absolute;
+    /* margin-top:-10px; */
+    margin-left: 20px;
+    
+}
+.tags{
+    position: absolute;
+    color: black;
+    margin-left: 60px;
+   
+    font-size: 120%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+.div_containt{
+    margin-top: -50px;
+    position: relative;
+    height: 120px;
+    width: 400px;
+}
+.div_btn:hover{
+    cursor: pointer;
+}
+.div_btn:active{
+    background-color: rgba(182, 14, 14, 0.459);
+    /* click */
+
+}
+.padle:hover{
+    cursor: pointer;
+
+}
+.padle:active{
+   
+    width: 40px;
+    
+    
+}
+.padle2:hover{
+    cursor: pointer;
+}
+.padle2:active{
+   
+    width: 45px;
+    
+}
+/* sdfgsdfgsdfgsdrfg */
+.div_side1{
+    /* display: inline-block; */
+    /* position: absolute; */
+    margin-top: 70px; 
+    
+    height: 360px;
+    width: 220px;
+  
+    /* overflow: scroll; */
+    
+}
+.div_box_btn1{
+    
+    height: 110px;
+    width: 200px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    /* padding: 50%; */
+    
+    background-color:white;
+    
+    font-size: 17px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

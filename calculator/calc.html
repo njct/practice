@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        
+        <link rel="stylesheet" href="calc.css">
+        <!-- <script src="calc.js"></script> -->
+        <style>
+            
+        </style>
+    </head>
+
+    <body>
+
+
+<script>
+        var output=1
+        
+// function bulbon(){
+//     document.getElementById('bulb').src='bulbon.png';
+// }
+    
+// function bulboff(){
+//     document.getElementById('bulb').src='bulboff.png';
+// }
+function bulbon(){
+
+}
+</script>
+    <div class="div_main">
+        <div>
+        <h1 id="output" class="output_layout">0</h1>
+        </div>
+        <div >
+            <button class="btn_normal line1" onclick="myFunction_ac()">AC</button>
+        <button class="btn_normal line1" id="+/-">+/-</button>
+        <button class="btn_normal line1" onclick="myFunction_per()">%</button>
+        <button class="btn_normal line_verticle" onclick="myFunction_devide()">&divide</button>
+        </div>
+        <div>
+        <button class="btn_normal line2" onclick="numb='7';myFunction_number()">7</button>
+        <button class="btn_normal line2" onclick="numb='8';myFunction_number()">8</button>
+        <button class="btn_normal line2" onclick="numb='9';myFunction_number()">9</button>
+        <button class="btn_normal line_verticle" onclick="myFunction_multi()">x</button>
+        </div>
+        
+        
+        
+        
+        <div>
+        <button class="btn_normal line2" onclick="numb='4';myFunction_number()">4</button>
+        <button class="btn_normal line2" onclick="numb='5';myFunction_number()">5</button>
+        <button class="btn_normal line2" onclick="numb='6';myFunction_number()">6</button>
+        <button class="btn_normal line_verticle" onclick="myFunction_minus()">-</button>
+        </div>
+        
+        <div>
+        <button class="btn_normal line2" onclick="numb='1';myFunction_number()">1</button>
+        <button class="btn_normal line2" onclick="numb='2';myFunction_number()">2</button>
+        <button class="btn_normal line2" onclick="numb='3';myFunction_number()">3</button>
+        <button class="btn_normal line_verticle" onclick="myFunction_plus()">+</button>
+        </div>
+        <div>
+            <button class="btn_zero line2" onclick="numb='0';myFunction_number()">0</button>
+            <button class="btn_normal line2" onclick="document.getElementById('output').innerHTML=(n+='.');">.</button>
+            <button class="btn_normal line_verticle" onclick="myFunction_equal()">=</button>
+        </div>
+        
+    </div>
+
+
+
+
+
+
+
+        <script>
+            var n = parseInt("0");
+            var x = parseInt("0");
+            var y = parseInt("0");
+            var z = parseInt("0");
+            var numb= parseInt("0");
+            
+            var o='';//operator
+            
+//                                     ------------------------------
+
+
+            function myFunction_number() {
+                n=document.getElementById('output').innerHTML;
+                n=parseInt(n);
+                if (n==0){
+                
+                
+                numb=parseInt(numb);
+                
+                document.getElementById('output').innerHTML=(n+numb);
+                
+                }
+                if (n!==0){
+                    
+                    document.getElementById('output').innerHTML=(n+=numb);
+                    numb=parseInt(numb);
+                    }
+            }
+
+
+           
+
+
+            function myFunction_ac() {
+                numb= parseInt("0");
+                
+                document.getElementById("output").innerHTML = "0";
+             
+             n = parseInt("0");
+           x = parseInt("0");
+            y = parseInt("0");
+             z = parseInt("0");
+            o="";
+            }
+         
+
+
+
+            function myFunction_plus() {
+                    x=document.getElementById("output").innerHTML;
+                    x=parseInt(x);
+                    
+                    y=parseInt(y);
+                    z=parseInt(z);
+                    z=(x+y);
+                    y=z;
+                    document.getElementById("output").innerHTML = (0);
+                    n='';
+                    o='+';
+
+            }
+            function myFunction_minus() {
+                    x=document.getElementById("output").innerHTML;
+                    x=parseInt(x);
+                    
+                    y=parseInt(y);
+                    z=parseInt(z);
+                    z=(x-y);
+                    y=z;
+                    document.getElementById("output").innerHTML = (0);
+                    n='';
+                    o='-';
+
+            }
+
+            function myFunction_multi() {
+                    x=document.getElementById("output").innerHTML;
+                    x=parseInt(x);
+                    
+                    y=parseInt(y);
+                    z=parseInt(z);
+                    z=(x+y);
+                    y=z;
+                    document.getElementById("output").innerHTML = (0);
+                    n='';
+                    o='*';
+
+            }
+
+
+            function myFunction_devide() {
+                    x=document.getElementById("output").innerHTML;
+                    x=parseInt(x);
+                    
+                    y=parseInt(y);
+                    z=parseInt(z);
+                    z=(x+y);
+                    y=z;
+                    document.getElementById("output").innerHTML = (0);
+                    n='';
+                    o='/';
+
+            }
+            function myFunction_per() {
+                    x=document.getElementById("output").innerHTML;
+                    x=parseInt(x);
+                    
+                    y=parseInt(y);
+                    z=parseInt(z);
+                    z=(x+y);
+                    y=z;
+                    // document.getElementById("output").innerHTML = (0);
+                    n='';
+                    o='%';
+
+            }
+
+
+           
+            function myFunction_equal() {
+                if (o=="+"){
+                    x=document.getElementById("output").innerHTML;
+                    x=parseInt(x);
+                    
+                    y=parseInt(y);
+                    z=parseInt(z);
+                    z=(x+y);
+                     y=z;
+                    
+                    n='';
+                    o='+';
+
+                document.getElementById("output").innerHTML = (z);
+                
+                }
+                if (o=="-"){
+                    x=document.getElementById("output").innerHTML;
+                    x=parseInt(x);
+                    
+                    y=parseInt(y);
+                    z=parseInt(z);
+                    z=(y-x);
+                    y=z;
+                    
+                    n='';
+                    o='-';
+
+                document.getElementById("output").innerHTML = (z);
+                
+                }
+                if (o=="*"){
+                    x=document.getElementById("output").innerHTML;
+                    x=parseInt(x);
+                    
+                    y=parseInt(y);
+                    z=parseInt(z);
+                    z=y * x;
+                    y=z;
+                    
+                    n='';
+                    o='*';
+
+                document.getElementById("output").innerHTML = (z);
+                
+                }
+                if (o=="/"){
+                    x=document.getElementById("output").innerHTML;
+                    x=parseInt(x);
+                   
+                    y=parseInt(y);
+                    z=parseInt(z);
+                    z=y / x;
+                    y=z;
+                    
+                    n='';
+                    o='/';
+
+                document.getElementById("output").innerHTML = (z);
+                
+                }
+                if (o=="%"){
+                    x=document.getElementById("output").innerHTML;
+                    x=parseInt(x);
+                    alert (y);
+                    y=parseInt(y);
+                    z=parseInt(z);
+                    z=(y * x)/100;
+                    y=z;
+                    alert (x);
+                    n='';
+                    o='%';
+
+                document.getElementById("output").innerHTML = (z);
+                
+                }
+
+            //     function myFunction_minus() {
+            //     if (o==""){
+            //     document.getElementById("output").innerHTML = 0;
+            //     // x=0;
+            //     x=parseInt(x);
+            //     n=parseInt(n);
+
+
+            //     x=(x+n);
+            //     alert (x);
+                
+            //     o='-'
+            //     }
+
+            //     else{
+            //     y=document.getElementById("output").innerHTML=0;
+            //     // alert (y);
+            //     // y=0;
+
+            //     n=parseInt(n);
+            //     y=parseInt(y);
+            //     y=y+n;
+            // //    alert (y);
+            //     // alert (y);
+                
+            //     o='-'
+            //     }
+            //     n='';
+            // }
+
+
+
+              // if (o=="+"){
+            //         x=parseInt(x);
+            //         y=parseInt(y);
+            //         z=document.getElementById("output").innerHTML;
+            //         z=parseInt(z);
+            //         z=(x+z);
+            //         document.getElementById("output").innerHTML = (z);
+                    
+            //     }
+            //     if (o=="-"){
+            //         x=parseInt(x);
+            //         y=parseInt(y);
+            //         z=document.getElementById("output").innerHTML;
+            //         z=parseInt(z);
+            //         z=(x-z);
+            //         document.getElementById("output").innerHTML = (z);
+                    
+            //     }
+            }
+            
+
+
+
+            // if (o=="+"){
+            //         x=parseInt(x);
+            //         y=parseInt(y);
+            //         z=document.getElementById("output").innerHTML;
+            //         z=parseInt(z);
+            //         z=(x+z);
+            //         document.getElementById("output").innerHTML = (z);
+                    
+            //     }
+            //     if (o=="-"){
+            //         x=parseInt(x);
+            //         y=parseInt(y);
+            //         z=document.getElementById("output").innerHTML;
+            //         z=parseInt(z);
+            //         z=(x-z);
+            //         document.getElementById("output").innerHTML = (z);
+                    
+            //     }
+                
+
+                
+
+
+
+
+            // function myFunction_plus() {
+            //     if (o==""){
+                    
+            //     document.getElementById("output").innerHTML = 0;
+            //     // x=0;
+            //     x=parseInt(x);
+            //     n=parseInt(n);
+
+
+            //     x=(x+n);
+            //     alert (x);
+                
+            //     o='+'
+            //     }
+
+            //     else{
+            //     y=document.getElementById("output").innerHTML=0;
+            //     // alert (y);
+            //     // y=0;
+
+            //     n=parseInt(n);
+            //     y=parseInt(y);
+            //     y=y+n;
+            //    alert (y);
+            //     // alert (y);
+                
+            //     o='+'
+            //     }
+            //     n=0;
+            // }
+
+        //    x= document.getElementById("output").innerHTML;
+        //    document.getElementById("output").innerHTML=x+y;
+            </script>
+    </body>
+</html>
